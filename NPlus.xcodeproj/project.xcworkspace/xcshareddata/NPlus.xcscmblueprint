@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "02bd1870-c6f0-4e74-98d9-df1f9447d845++7629",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "02bd1870-c6f0-4e74-98d9-df1f9447d845++7629" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "02bd1870-c6f0-4e74-98d9-df1f9447d845++7629" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "544403CA-A86C-4702-9883-53CB0F8D9819",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "02bd1870-c6f0-4e74-98d9-df1f9447d845++7629" : "NPlus\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NPlus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NPlus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.nct.vn\/repos\/svn_mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02bd1870-c6f0-4e74-98d9-df1f9447d845++7629"
+    }
+  ]
+}

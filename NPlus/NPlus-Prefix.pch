@@ -1,0 +1,48 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Constant.h"
+    #import "AppDelegate.h"
+    #import "NSString+MD5.h"
+    #import "NSString+URLEncode.h"
+    #import "UIImage+ImageEffects.h"
+    #import "UIDevice+IdentifierAddition.h"
+    #import "Util.h"
+    #import "UserDefaultManager.h"
+    #import "TokenManager.h"
+    #import "Utilities.h"
+    #import "GAI.h"
+    #import "GAIDictionaryBuilder.h"
+    #import "GAITracker.h"
+    #import "GAIFields.h"
+#endif
+#define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define IOS_OLDER_THAN_6 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] < 6.0 )
+#define IOS_NEWER_OR_EQUAL_TO_6 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 6.0 )
+#define IOS_OLDER_THAN_7 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] < 7.0 )
+#define IOS_NEWER_OR_EQUAL_TO_7 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 7.0 )
+#define ORIGIN_Y (IOS_NEWER_OR_EQUAL_TO_7 ? 0.0f : 0.0f)
+#define HEIGHT_STATUSBAR_IOS6 (IOS_NEWER_OR_EQUAL_TO_7 ? 0.0f : 20.0f)
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#define RGB(x,y,z) [UIColor colorWithRed:x/255.0f green:y/255.0f blue:z/255.0f alpha:1.0f]
+//#define UIColorFromRGB(rgbValue,alpha) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpha]
+
+#define BACKGROUND_COLOR RGB(235, 235, 235)
+#define COLOR_MAIN_BLUE RGB(0, 173, 239)
+#define COLOR_MAIN_GRAY RGB(136, 137, 137)
+#define HEADER_BACKGROUND_COLOR [UIColor colorWithRed:31/255.0f green:45/255.0f blue:51/255.0f alpha:1.0f]
+#define imageNameWithMaskWhiteColor(x) [[UIImage imageNamed:x] ipMaskedcolor:[UIColor colorWithWhite:1.0 alpha:1.0f]]
+#define imageNameWithMaskBlueColor(x) [[UIImage imageNamed:x] ipMaskedcolor:COLOR_MAIN_BLUE]

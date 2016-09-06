@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PowerUserVC">
+            <connections>
+                <outlet property="btnBack" destination="W4o-bJ-dQW" id="dkd-Td-TXB"/>
+                <outlet property="tbMain" destination="2DS-hB-Unc" id="JWB-ud-izb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="2DS-hB-Unc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Vo6-sS-Yy1"/>
+                        <outlet property="delegate" destination="-1" id="gX7-Nc-Vrj"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2DS-hB-Unc" secondAttribute="bottom" id="MJX-Nd-Khf"/>
+                <constraint firstItem="2DS-hB-Unc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QCr-ap-V98"/>
+                <constraint firstItem="2DS-hB-Unc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kGi-Eb-Ash"/>
+                <constraint firstAttribute="trailing" secondItem="2DS-hB-Unc" secondAttribute="trailing" id="qjH-7X-cb5"/>
+            </constraints>
+            <point key="canvasLocation" x="252" y="292"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W4o-bJ-dQW">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+            <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <state key="normal" title="Power User" image="icon_back.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" image="icon_back_hover.png"/>
+            <connections>
+                <action selector="btnBack_Tapped:" destination="-1" eventType="touchUpInside" id="WQ1-6n-cr0"/>
+            </connections>
+            <point key="canvasLocation" x="306.5" y="-74"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="icon_back.png" width="8" height="16"/>
+        <image name="icon_back_hover.png" width="8" height="16"/>
+    </resources>
+</document>

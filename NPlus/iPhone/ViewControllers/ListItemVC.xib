@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListItemVC">
+            <connections>
+                <outlet property="cvMain" destination="mMq-4G-wAe" id="ZDM-OH-DqN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mMq-4G-wAe">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="6" id="xgh-vU-jiM">
+                        <size key="itemSize" width="95" height="190"/>
+                        <size key="headerReferenceSize" width="320" height="11"/>
+                        <size key="footerReferenceSize" width="320" height="11"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mMq-4G-wAe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0VD-cb-hsT"/>
+                <constraint firstAttribute="trailing" secondItem="mMq-4G-wAe" secondAttribute="trailing" id="6VY-eo-BPf"/>
+                <constraint firstAttribute="bottom" secondItem="mMq-4G-wAe" secondAttribute="bottom" id="6nX-wR-OYo"/>
+                <constraint firstItem="mMq-4G-wAe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PhE-pT-C4g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="402" y="249"/>
+        </view>
+    </objects>
+</document>

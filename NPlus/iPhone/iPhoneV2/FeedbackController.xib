@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackController">
+            <connections>
+                <outlet property="btnSend" destination="w1Q-fZ-MtH" id="8nN-Sn-yW2"/>
+                <outlet property="gestuer" destination="Yse-uw-zqy" id="pNZ-6Y-Gkv"/>
+                <outlet property="lblRequired" destination="dcP-Uz-R3h" id="681-Kd-Pex"/>
+                <outlet property="scrollView" destination="Lzh-gJ-8S2" id="35i-jr-TOT"/>
+                <outlet property="txtDesc" destination="99C-YS-QMN" id="q5f-Nc-lct"/>
+                <outlet property="txtNumber" destination="Ie7-cl-pBH" id="UnT-Ac-gjg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewButton" destination="HHC-nw-C6T" id="Ogk-Se-e2E"/>
+                <outlet property="viewGesture" destination="hgU-3s-pWE" id="cED-R5-o7G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-gJ-8S2">
+                    <rect key="frame" x="0.0" y="59" width="600" height="541"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vấn đề bạn gặp phải?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgw-Ju-nKD">
+                            <rect key="frame" x="8" y="8" width="584" height="31"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Miêu tả cụ thể (bắt buộc)*:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-Uz-R3h">
+                            <rect key="frame" x="8" y="171" width="584" height="21"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="99C-YS-QMN">
+                            <rect key="frame" x="8" y="200" width="584" height="99"/>
+                            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="99" id="iDr-ej-rTX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="AKH-dK-jya"/>
+                            </connections>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Điện thoại liên hệ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fen-t5-ync">
+                            <rect key="frame" x="8" y="322" width="126" height="21"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-cl-pBH">
+                            <rect key="frame" x="150" y="318" width="416" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1XZ-l4-xlE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Udk-IE-ocu"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1Q-fZ-MtH">
+                            <rect key="frame" x="184" y="401" width="230" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="Dh1-kp-Hx2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                            <state key="normal" title="Gửi góp ý- báo lỗi">
+                                <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSendTapped:" destination="-1" eventType="touchUpInside" id="M37-gr-JDS"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHC-nw-C6T">
+                            <rect key="frame" x="8" y="40" width="584" height="178"/>
+                            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="178" id="DkU-iD-8FF"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iit-TR-dOW">
+                            <rect key="frame" x="145" y="369" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="MCz-hr-hzx"/>
+                                <constraint firstAttribute="height" constant="30" id="mNL-yn-shC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Nếu không đăng nhập sẽ không thể nhận phản hồi." image="icon-error">
+                                <color key="titleColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgU-3s-pWE">
+                            <rect key="frame" x="0.0" y="-59" width="600" height="600"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Yse-uw-zqy" appends="YES" id="jPA-ex-sny"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="99C-YS-QMN" secondAttribute="trailing" constant="20" id="0A2-A1-uhf"/>
+                        <constraint firstItem="iit-TR-dOW" firstAttribute="centerX" secondItem="Lzh-gJ-8S2" secondAttribute="centerX" id="3ge-L3-9Ij"/>
+                        <constraint firstItem="fen-t5-ync" firstAttribute="top" secondItem="99C-YS-QMN" secondAttribute="bottom" constant="23" id="5mB-LY-kW8"/>
+                        <constraint firstItem="Ie7-cl-pBH" firstAttribute="leading" secondItem="Lzh-gJ-8S2" secondAttribute="leading" constant="150" id="8ZH-vw-PuQ"/>
+                        <constraint firstAttribute="trailing" secondItem="qgw-Ju-nKD" secondAttribute="trailing" constant="20" id="JMB-xw-hlL"/>
+                        <constraint firstItem="Ie7-cl-pBH" firstAttribute="centerY" secondItem="fen-t5-ync" secondAttribute="centerY" id="NBc-U4-kvu"/>
+                        <constraint firstAttribute="trailing" secondItem="Ie7-cl-pBH" secondAttribute="trailing" constant="30" id="S4V-i3-8oQ"/>
+                        <constraint firstItem="iit-TR-dOW" firstAttribute="top" secondItem="Ie7-cl-pBH" secondAttribute="bottom" constant="15" id="ScE-9h-cU8"/>
+                        <constraint firstItem="w1Q-fZ-MtH" firstAttribute="top" secondItem="iit-TR-dOW" secondAttribute="bottom" constant="5" id="TJZ-Ye-ZxF"/>
+                        <constraint firstItem="fen-t5-ync" firstAttribute="leading" secondItem="Lzh-gJ-8S2" secondAttribute="leading" constant="20" id="UsK-jQ-5An"/>
+                        <constraint firstItem="HHC-nw-C6T" firstAttribute="top" secondItem="qgw-Ju-nKD" secondAttribute="bottom" constant="3" id="W8q-QE-d2m"/>
+                        <constraint firstItem="99C-YS-QMN" firstAttribute="leading" secondItem="Lzh-gJ-8S2" secondAttribute="leading" constant="20" id="WK2-s5-W1x"/>
+                        <constraint firstItem="w1Q-fZ-MtH" firstAttribute="centerX" secondItem="Lzh-gJ-8S2" secondAttribute="centerX" id="cz1-Lw-PC4"/>
+                        <constraint firstItem="dcP-Uz-R3h" firstAttribute="leading" secondItem="Lzh-gJ-8S2" secondAttribute="leading" constant="20" id="fM5-kM-1Vb"/>
+                        <constraint firstItem="qgw-Ju-nKD" firstAttribute="top" secondItem="Lzh-gJ-8S2" secondAttribute="top" constant="15" id="ilE-3h-S1I"/>
+                        <constraint firstItem="qgw-Ju-nKD" firstAttribute="leading" secondItem="Lzh-gJ-8S2" secondAttribute="leading" constant="20" id="jmj-Ix-AQM"/>
+                        <constraint firstItem="99C-YS-QMN" firstAttribute="top" secondItem="dcP-Uz-R3h" secondAttribute="bottom" constant="8" id="kq7-UH-Y60"/>
+                        <constraint firstAttribute="trailing" secondItem="dcP-Uz-R3h" secondAttribute="trailing" constant="20" id="r2D-bu-TeV"/>
+                        <constraint firstItem="dcP-Uz-R3h" firstAttribute="top" secondItem="HHC-nw-C6T" secondAttribute="bottom" constant="3" id="r2P-3G-o0F"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ie7-cl-pBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="150" id="6W6-Th-ebR"/>
+                <constraint firstItem="99C-YS-QMN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="G5r-EA-jAk"/>
+                <constraint firstAttribute="trailing" secondItem="Ie7-cl-pBH" secondAttribute="trailing" constant="30" id="HVe-5K-bbL"/>
+                <constraint firstItem="Lzh-gJ-8S2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nex-1V-79R"/>
+                <constraint firstItem="Lzh-gJ-8S2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ucn-jz-o2o"/>
+                <constraint firstAttribute="trailing" secondItem="HHC-nw-C6T" secondAttribute="trailing" constant="8" id="XDc-Ea-zxU"/>
+                <constraint firstAttribute="trailing" secondItem="99C-YS-QMN" secondAttribute="trailing" constant="20" id="Z4G-uA-TrS"/>
+                <constraint firstAttribute="trailing" secondItem="Lzh-gJ-8S2" secondAttribute="trailing" id="ZSq-cF-eac"/>
+                <constraint firstAttribute="bottom" secondItem="Lzh-gJ-8S2" secondAttribute="bottom" id="aCa-hW-dMw"/>
+                <constraint firstItem="HHC-nw-C6T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zZv-MZ-aea"/>
+            </constraints>
+            <point key="canvasLocation" x="278" y="329"/>
+        </view>
+        <tapGestureRecognizer id="Yse-uw-zqy">
+            <connections>
+                <action selector="gestureAction:" destination="-1" id="5va-EV-o4A"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon-error" width="30" height="30"/>
+    </resources>
+</document>

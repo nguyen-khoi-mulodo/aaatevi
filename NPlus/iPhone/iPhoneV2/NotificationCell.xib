@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="NotificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tập cuối Hậu duệ mặt trời - Kết thúc đẹp và thỏa mãn người xem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-iu-da0">
+                        <rect key="frame" x="145" y="10" width="167" height="44"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                        <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="27/04/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-yf-A79">
+                        <rect key="frame" x="229" y="60" width="83" height="21"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                        <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-video-v2" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-1p-aGZ">
+                        <rect key="frame" x="8" y="9" width="130" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XFC-1p-aGZ" secondAttribute="height" multiplier="65:37" id="1jx-MZ-HRG"/>
+                            <constraint firstAttribute="width" constant="130" id="toA-y4-LKE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="XFC-1p-aGZ" secondAttribute="leading" id="Beu-TW-n23"/>
+                    <constraint firstItem="PVB-yf-A79" firstAttribute="bottom" secondItem="XFC-1p-aGZ" secondAttribute="bottom" id="Tp8-kd-hfd"/>
+                    <constraint firstItem="XFC-1p-aGZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="WVa-ak-Yxn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PVB-yf-A79" secondAttribute="trailing" id="g5H-x3-HJf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XFC-1p-aGZ" secondAttribute="bottom" id="jtr-ny-Xqa"/>
+                    <constraint firstItem="sNW-iu-da0" firstAttribute="leading" secondItem="XFC-1p-aGZ" secondAttribute="trailing" constant="7" id="vLO-4N-36x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sNW-iu-da0" secondAttribute="trailing" id="xbn-KE-avU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDesc" destination="sNW-iu-da0" id="t3s-hq-nc3"/>
+                <outlet property="lblTime" destination="PVB-yf-A79" id="0Yf-O1-0Lv"/>
+                <outlet property="thumbImg" destination="XFC-1p-aGZ" id="FaC-JI-Uup"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="372"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default-video-v2" width="186" height="105"/>
+    </resources>
+</document>

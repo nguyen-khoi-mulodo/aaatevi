@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downloadCellId" id="KGk-i7-Jjw" customClass="DownloadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="da8-IQ-L3s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50MB/74.3MB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-my-jmc">
+                        <rect key="frame" x="12" y="31" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9sk-CM-MUz"/>
+                            <constraint firstAttribute="width" constant="93" id="oFI-XE-1T4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(63%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpE-di-LX3">
+                        <rect key="frame" x="106" y="31" width="47" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="0Gl-JQ-f9S"/>
+                            <constraint firstAttribute="height" constant="21" id="fxm-bx-U9g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.22404540100000001" green="0.58806749339999997" blue="0.96605383830000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="personal_check_hover.png" translatesAutoresizingMaskIntoConstraints="NO" id="t1s-PO-57E">
+                        <rect key="frame" x="12" y="23" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Gdb-nD-P3U"/>
+                            <constraint firstAttribute="width" constant="17" id="sqD-rC-Ghb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Đang tải" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i89-sX-hzW">
+                        <rect key="frame" x="243" y="40" width="77" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="Lf4-KJ-rTO"/>
+                            <constraint firstAttribute="height" constant="21" id="pdP-5J-cN6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-A9-RKs">
+                        <rect key="frame" x="243" y="1" width="77" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="R3o-rh-NnD"/>
+                        </constraints>
+                        <state key="normal" image="personal_icon_dangdung.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnDownload_Tapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OZg-e7-jNw"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ai tốt hơn ai - Lý Hải, Trung Lùn, Nhật Cường" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fo-IN-b0C">
+                        <rect key="frame" x="12" y="11" width="245" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RHk-71-CVO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t1s-PO-57E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="18V-dI-N6c"/>
+                    <constraint firstAttribute="centerY" secondItem="t1s-PO-57E" secondAttribute="centerY" id="1gy-4N-BGz"/>
+                    <constraint firstItem="KKe-A9-RKs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="ANm-Se-z4l"/>
+                    <constraint firstItem="AuL-my-jmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="DLd-1t-Ape"/>
+                    <constraint firstItem="da8-IQ-L3s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="PCa-BB-n6E"/>
+                    <constraint firstItem="da8-IQ-L3s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="VfW-E6-wUl"/>
+                    <constraint firstItem="1fo-IN-b0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="ZKE-PX-el9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i89-sX-hzW" secondAttribute="trailing" constant="-8" id="db2-ru-OaH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="da8-IQ-L3s" secondAttribute="bottom" constant="-8" id="dcT-TJ-voR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="da8-IQ-L3s" secondAttribute="trailing" constant="-8" id="fU1-fG-vSW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KKe-A9-RKs" secondAttribute="trailing" constant="-8" id="fnb-xz-sv3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AuL-my-jmc" secondAttribute="bottom" constant="1" id="fui-lQ-viH"/>
+                    <constraint firstItem="1fo-IN-b0C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="hwP-rb-R7g"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1fo-IN-b0C" secondAttribute="trailing" constant="55" id="rNX-3d-Mmt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i89-sX-hzW" secondAttribute="bottom" constant="-7" id="rno-Hp-QxO"/>
+                    <constraint firstItem="MpE-di-LX3" firstAttribute="leading" secondItem="AuL-my-jmc" secondAttribute="trailing" constant="1" id="uCV-fG-oRb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KKe-A9-RKs" secondAttribute="bottom" constant="-7" id="vQu-Hy-Nm2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MpE-di-LX3" secondAttribute="bottom" constant="1" id="ySY-0c-ofi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDownload" destination="KKe-A9-RKs" id="hhZ-Xa-NjX"/>
+                <outlet property="imgBackground" destination="da8-IQ-L3s" id="ohT-hf-2NX"/>
+                <outlet property="imgCheck" destination="t1s-PO-57E" id="Hy8-z1-yyn"/>
+                <outlet property="lbDownload" destination="i89-sX-hzW" id="Ov1-g1-WWy"/>
+                <outlet property="lbPercent" destination="MpE-di-LX3" id="EQh-vR-whg"/>
+                <outlet property="lbSize" destination="AuL-my-jmc" id="xup-FI-Kra"/>
+                <outlet property="lbSize_LeadingMargin" destination="DLd-1t-Ape" id="94W-ui-F90"/>
+                <outlet property="lbTitle" destination="1fo-IN-b0C" id="xbe-rZ-2Es"/>
+                <outlet property="lbTitle_LeadingMargin" destination="hwP-rb-R7g" id="Req-V7-Y2D"/>
+                <outlet property="lbTitle_TrailingMargin" destination="rNX-3d-Mmt" id="Ehq-gM-hva"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="290"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="personal_check_hover.png" width="18" height="18"/>
+        <image name="personal_icon_dangdung.png" width="22" height="22"/>
+    </resources>
+</document>

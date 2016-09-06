@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+        <mutableArray key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+            <string>SanFranciscoDisplay-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downloadingItemCellIdef" rowHeight="93" id="KGk-i7-Jjw" customClass="DownloadingItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-video-v2" translatesAutoresizingMaskIntoConstraints="NO" id="nkB-yb-jbC">
+                        <rect key="frame" x="8" y="9" width="130" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nkB-yb-jbC" secondAttribute="height" multiplier="65:37" id="Hk8-L6-bYK"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="IBw-5o-dS2"/>
+                            <constraint firstAttribute="width" constant="130" id="WzI-DY-3SP"/>
+                            <constraint firstAttribute="height" constant="74" id="hot-US-A3p"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg-transpatrent-time-v2" translatesAutoresizingMaskIntoConstraints="NO" id="6LH-UI-oyQ">
+                        <rect key="frame" x="8" y="55" width="130" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="L5r-m1-WgX"/>
+                            <constraint firstAttribute="width" constant="130" id="ZrR-9B-Bvx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="30:05" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-Dp-MJe">
+                        <rect key="frame" x="77" y="60" width="55" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fc5-nz-NVh">
+                        <rect key="frame" x="146" y="79" width="166" height="2"/>
+                        <color key="tintColor" red="0.0" green="0.67843137249999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Đang tải" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeh-sh-6rv">
+                        <rect key="frame" x="146" y="58" width="75" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="zzK-KT-MuG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="480p" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-ce-CYV">
+                        <rect key="frame" x="90" y="13" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="45MB/120MB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-01-5Va">
+                        <rect key="frame" x="223" y="58" width="89" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bé Tin làm rung động giám khảm Bạn có thực tài" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-S4-F3U">
+                        <rect key="frame" x="146" y="9" width="166" height="42"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="65x-Ee-PmM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                        <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6LH-UI-oyQ" secondAttribute="bottom" constant="8" id="7pV-a7-r2I"/>
+                    <constraint firstItem="nkB-yb-jbC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="CHu-83-Ump"/>
+                    <constraint firstItem="6LH-UI-oyQ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="DWP-f9-akA"/>
+                    <constraint firstItem="SPe-S4-F3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="F3j-sJ-XZk"/>
+                    <constraint firstItem="9bl-01-5Va" firstAttribute="leading" secondItem="Qeh-sh-6rv" secondAttribute="trailing" constant="2" id="IIS-Eq-olx"/>
+                    <constraint firstAttribute="trailing" secondItem="9bl-01-5Va" secondAttribute="trailing" constant="8" id="J7T-pE-vDW"/>
+                    <constraint firstItem="Qeh-sh-6rv" firstAttribute="leading" secondItem="6LH-UI-oyQ" secondAttribute="trailing" constant="8" id="KdU-9F-hSd"/>
+                    <constraint firstItem="fc5-nz-NVh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="L5R-y7-pld"/>
+                    <constraint firstItem="SPe-S4-F3U" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YyV-sD-k6y"/>
+                    <constraint firstAttribute="bottom" secondItem="nkB-yb-jbC" secondAttribute="bottom" constant="8" id="agT-FH-8va"/>
+                    <constraint firstItem="SPe-S4-F3U" firstAttribute="leading" secondItem="nkB-yb-jbC" secondAttribute="trailing" constant="8" id="cFZ-2q-Rrh"/>
+                    <constraint firstItem="6LH-UI-oyQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ctK-XJ-zHN"/>
+                    <constraint firstItem="fc5-nz-NVh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="138" id="gDZ-Ot-uDY"/>
+                    <constraint firstItem="6LH-UI-oyQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iWU-uH-AS0"/>
+                    <constraint firstAttribute="bottom" secondItem="9bl-01-5Va" secondAttribute="bottom" constant="11" id="okT-p9-R5S"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9bl-01-5Va" secondAttribute="bottom" constant="3" id="rPP-Sx-6pv"/>
+                    <constraint firstItem="lqD-Dp-MJe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="69" id="ser-Ew-5Rm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fc5-nz-NVh" secondAttribute="bottom" constant="2" id="tug-3H-lxS"/>
+                    <constraint firstAttribute="bottom" secondItem="Qeh-sh-6rv" secondAttribute="bottom" constant="12" id="xUr-Hv-HGJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" red="0.0" green="0.67843137249999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lbQuality" destination="WMg-ce-CYV" id="zta-py-dns"/>
+                <outlet property="lbSize" destination="9bl-01-5Va" id="7w6-x4-TZ2"/>
+                <outlet property="lbStatus" destination="Qeh-sh-6rv" id="9o1-73-h7L"/>
+                <outlet property="lblDuration" destination="lqD-Dp-MJe" id="NAR-S5-Wpw"/>
+                <outlet property="lblTitle" destination="SPe-S4-F3U" id="Xf5-oa-URd"/>
+                <outlet property="progressView" destination="fc5-nz-NVh" id="v0D-lg-ZOk"/>
+                <outlet property="thumbImg" destination="nkB-yb-jbC" id="8ci-hI-afU"/>
+            </connections>
+            <point key="canvasLocation" x="214" y="339"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg-transpatrent-time-v2" width="186" height="32"/>
+        <image name="default-video-v2" width="186" height="105"/>
+    </resources>
+</document>

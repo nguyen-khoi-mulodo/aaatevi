@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadingController">
+            <connections>
+                <outlet property="btnHeader" destination="kVx-pp-J0s" id="Aa6-ki-Gcj"/>
+                <outlet property="footerView" destination="mJX-tb-2dZ" id="Wox-de-aWf"/>
+                <outlet property="headerView" destination="LGI-y0-qP4" id="KQv-QW-i7L"/>
+                <outlet property="lbDiskSpace" destination="gLC-8G-5o9" id="qTI-WE-LAu"/>
+                <outlet property="lbHeader" destination="KmM-m3-kOb" id="Vmv-6i-xFg"/>
+                <outlet property="tbMain" destination="ef2-PN-BQ1" id="v2Z-1M-njw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hQB-Nb-s2o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-PN-BQ1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JbD-qJ-6ZV"/>
+                        <outlet property="delegate" destination="-1" id="jHH-KF-KIT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ef2-PN-BQ1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0HW-mv-VYx"/>
+                <constraint firstAttribute="bottom" secondItem="ef2-PN-BQ1" secondAttribute="bottom" id="9Q1-AB-Pna"/>
+                <constraint firstItem="ef2-PN-BQ1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Avj-td-aDz"/>
+                <constraint firstAttribute="trailing" secondItem="ef2-PN-BQ1" secondAttribute="trailing" id="wEJ-Ju-Lbt"/>
+            </constraints>
+            <point key="canvasLocation" x="385" y="-53"/>
+        </view>
+        <view contentMode="scaleToFill" id="LGI-y0-qP4" userLabel="Header">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-pp-J0s">
+                    <rect key="frame" x="10" y="12" width="20" height="22"/>
+                    <state key="normal" image="icon-tamdung-v2"/>
+                    <connections>
+                        <action selector="pauseAll:" destination="-1" eventType="touchUpInside" id="DOI-Nf-n4J"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tạm ngưng tất cả" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmM-m3-kOb">
+                    <rect key="frame" x="38" y="12" width="554" height="21"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ls-6b-SJK">
+                    <rect key="frame" x="38" y="0.0" width="562" height="44"/>
+                    <connections>
+                        <action selector="pauseAll:" destination="-1" eventType="touchUpInside" id="ONT-u3-j0v"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KmM-m3-kOb" firstAttribute="leading" secondItem="kVx-pp-J0s" secondAttribute="trailing" constant="8" id="329-FA-w90"/>
+                <constraint firstAttribute="trailing" secondItem="8ls-6b-SJK" secondAttribute="trailing" id="Bye-h8-YlU"/>
+                <constraint firstAttribute="trailing" secondItem="KmM-m3-kOb" secondAttribute="trailing" constant="8" id="cjU-bf-Rda"/>
+                <constraint firstItem="8ls-6b-SJK" firstAttribute="top" secondItem="LGI-y0-qP4" secondAttribute="top" id="pQZ-RF-Zsc"/>
+                <constraint firstAttribute="bottom" secondItem="8ls-6b-SJK" secondAttribute="bottom" id="pbi-vh-Hmn"/>
+                <constraint firstItem="8ls-6b-SJK" firstAttribute="leading" secondItem="kVx-pp-J0s" secondAttribute="trailing" constant="8" id="yPC-NL-WoF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="450" y="349.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="mJX-tb-2dZ" userLabel="Footer">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng dung lượng 56.7GB/Khả dụng 32GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLC-8G-5o9">
+                    <rect key="frame" x="8" y="0.0" width="584" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90191346406936646" green="0.90199369192123413" blue="0.90184646844863892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gLC-8G-5o9" secondAttribute="trailing" constant="8" id="UaG-KC-GDu"/>
+                <constraint firstItem="gLC-8G-5o9" firstAttribute="leading" secondItem="mJX-tb-2dZ" secondAttribute="leading" constant="8" id="nbR-kX-DQY"/>
+                <constraint firstAttribute="bottom" secondItem="gLC-8G-5o9" secondAttribute="bottom" id="prM-dx-zuz"/>
+                <constraint firstItem="gLC-8G-5o9" firstAttribute="top" secondItem="mJX-tb-2dZ" secondAttribute="top" id="wqr-ef-2HT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="566" y="455.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-tamdung-v2" width="20" height="20"/>
+    </resources>
+</document>

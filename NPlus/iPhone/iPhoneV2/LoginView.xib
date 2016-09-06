@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IsL-CM-cl3">
+                    <rect key="frame" x="16" y="132" width="268" height="139"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esM-qz-TqV">
+                            <rect key="frame" x="0.0" y="0.0" width="276" height="39"/>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Đăng nhập" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-H0-fWe">
+                            <rect key="frame" x="7" y="8" width="254" height="21"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-Ih-Zbo" customClass="LoginButtonView">
+                            <rect key="frame" x="16" y="50" width="255" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwJ-dX-4c8">
+                            <rect key="frame" x="96" y="100" width="76" height="30"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Bỏ qua">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.67843137254901964" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="SanFranciscoDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="btnCancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WoF-Th-myJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZe-bE-PNE" userLabel="CancelBtn">
+                            <rect key="frame" x="236" y="4" width="25" height="25"/>
+                            <state key="normal" image="icon-huy-popup-v2"/>
+                            <state key="highlighted" image="icon-huy-popup-h-v2"/>
+                            <connections>
+                                <action selector="btnCancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1eg-WN-Oir"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dwJ-dX-4c8" firstAttribute="top" secondItem="WD6-Ih-Zbo" secondAttribute="bottom" constant="3" id="CdZ-jr-4jN"/>
+                        <constraint firstItem="vZe-bE-PNE" firstAttribute="top" secondItem="IsL-CM-cl3" secondAttribute="top" constant="5" id="CsH-Pb-bhe"/>
+                        <constraint firstItem="dwJ-dX-4c8" firstAttribute="centerX" secondItem="IsL-CM-cl3" secondAttribute="centerX" id="HNU-m6-Qxj"/>
+                        <constraint firstItem="Mxw-H0-fWe" firstAttribute="centerX" secondItem="IsL-CM-cl3" secondAttribute="centerX" id="Las-6o-Jde"/>
+                        <constraint firstAttribute="trailing" secondItem="vZe-bE-PNE" secondAttribute="trailing" constant="5" id="SK7-LI-mcZ"/>
+                        <constraint firstItem="WD6-Ih-Zbo" firstAttribute="centerX" secondItem="IsL-CM-cl3" secondAttribute="centerX" id="Xhq-g3-5Yc"/>
+                        <constraint firstItem="esM-qz-TqV" firstAttribute="top" secondItem="IsL-CM-cl3" secondAttribute="top" id="cOL-Bj-Xpz"/>
+                        <constraint firstItem="Mxw-H0-fWe" firstAttribute="leading" secondItem="IsL-CM-cl3" secondAttribute="leading" constant="8" id="lbT-NB-rw9"/>
+                        <constraint firstAttribute="trailing" secondItem="esM-qz-TqV" secondAttribute="trailing" id="o7c-qL-q7d"/>
+                        <constraint firstItem="esM-qz-TqV" firstAttribute="leading" secondItem="IsL-CM-cl3" secondAttribute="leading" id="zQu-io-8uK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IsL-CM-cl3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3q1-mh-WG2"/>
+                <constraint firstItem="IsL-CM-cl3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ADn-YJ-3dC"/>
+                <constraint firstItem="IsL-CM-cl3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="F0N-Mb-gJJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgHeaderView" destination="esM-qz-TqV" id="Pc4-ck-tdc"/>
+                <outlet property="btnCancel" destination="vZe-bE-PNE" id="6j6-Vw-bOM"/>
+                <outlet property="lblLogin" destination="Mxw-H0-fWe" id="zfK-oS-vjW"/>
+                <outlet property="loginButtonView" destination="WD6-Ih-Zbo" id="1di-5D-apa"/>
+                <outlet property="loginSubView" destination="IsL-CM-cl3" id="hQX-a2-Vz7"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="259"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-huy-popup-h-v2" width="26" height="26"/>
+        <image name="icon-huy-popup-v2" width="26" height="26"/>
+    </resources>
+</document>

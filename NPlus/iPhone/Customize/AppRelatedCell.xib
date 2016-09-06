@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="appRelatedCellID" id="KGk-i7-Jjw" customClass="AppRelatedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NhacCuaTui" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-Zn-ci5">
+                        <rect key="frame" x="78" y="12" width="234" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GCq-W1-2gV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                        <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ứng dụng hot nhất hiện nay được nhiều người sử dụng nhất trên thế giới. Các bạn không nên tải về" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="9dT-4B-gzk">
+                        <rect key="frame" x="78" y="31" width="234" height="41"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                        <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0SX-Ub-y2v">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="0ws-Zi-oFF"/>
+                            <constraint firstAttribute="height" constant="60" id="eek-ZQ-nG6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9dT-4B-gzk" firstAttribute="top" secondItem="Ikp-Zn-ci5" secondAttribute="bottom" constant="-1" id="4hc-aZ-ziF"/>
+                    <constraint firstItem="0SX-Ub-y2v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="IZU-z8-nK6"/>
+                    <constraint firstItem="9dT-4B-gzk" firstAttribute="leading" secondItem="0SX-Ub-y2v" secondAttribute="trailing" constant="8" id="Oyo-rO-iYC"/>
+                    <constraint firstItem="9dT-4B-gzk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="QJG-Ml-UBj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9dT-4B-gzk" secondAttribute="bottom" constant="-1" id="SVh-cA-kov"/>
+                    <constraint firstItem="Ikp-Zn-ci5" firstAttribute="leading" secondItem="0SX-Ub-y2v" secondAttribute="trailing" constant="8" id="WWS-6J-JZ6"/>
+                    <constraint firstItem="Ikp-Zn-ci5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="jbS-nh-Yuw"/>
+                    <constraint firstItem="Ikp-Zn-ci5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sEC-TB-Jav"/>
+                    <constraint firstItem="0SX-Ub-y2v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="yLj-eS-fmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgItem" destination="0SX-Ub-y2v" id="tgq-zQ-92a"/>
+                <outlet property="lbDesc" destination="9dT-4B-gzk" id="kPo-de-KvU"/>
+                <outlet property="lbTitle" destination="Ikp-Zn-ci5" id="drC-BK-1d1"/>
+            </connections>
+            <point key="canvasLocation" x="251" y="201"/>
+        </tableViewCell>
+    </objects>
+</document>

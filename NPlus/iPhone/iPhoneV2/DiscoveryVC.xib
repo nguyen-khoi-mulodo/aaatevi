@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoveryVC">
+            <connections>
+                <outlet property="_viewNoConnection" destination="hCT-ND-HaT" id="T3e-h9-xNG"/>
+                <outlet property="btnRelax" destination="ysC-Sl-0N3" id="1CF-w7-s1h"/>
+                <outlet property="btnShortFilm" destination="OfK-Fo-vQR" id="57m-Tb-irw"/>
+                <outlet property="btnTVShow" destination="33g-1d-h5C" id="AMA-PJ-mjh"/>
+                <outlet property="genreView" destination="V7w-0x-68S" id="Q6n-5K-pQB"/>
+                <outlet property="lbTitleTopKeys" destination="kig-aO-WAi" id="Fkr-ot-QDm"/>
+                <outlet property="loadingTopKeys" destination="SAe-Ge-7WC" id="gcE-4d-QH2"/>
+                <outlet property="tagsContent" destination="a27-Zp-ova" id="khW-bm-txA"/>
+                <outlet property="tagsView" destination="eay-bO-bVT" id="VR4-Do-lCJ"/>
+                <outlet property="tbMain" destination="Ehc-dv-Tlo" id="MuC-Nr-rHT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="fKP-B3-NBK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ehc-dv-Tlo">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="D9I-pq-UvS"/>
+                        <outlet property="delegate" destination="-1" id="QsL-Im-C9D"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCT-ND-HaT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-33-FAg">
+                            <rect key="frame" x="180" y="260" width="240" height="104"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-matketnoi" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-dt-l9v">
+                                    <rect key="frame" x="85" y="8" width="70" height="55"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mất kết nối, vui lòng thử lại sau!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIS-bV-nnp">
+                                    <rect key="frame" x="0.0" y="70" width="240" height="21"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                                    <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="DMx-33-FAg" firstAttribute="centerY" secondItem="hCT-ND-HaT" secondAttribute="centerY" id="gEK-8Z-YrH"/>
+                        <constraint firstItem="DMx-33-FAg" firstAttribute="centerX" secondItem="hCT-ND-HaT" secondAttribute="centerX" id="w8c-KW-cSK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hCT-ND-HaT" secondAttribute="trailing" id="5Le-mi-nz7"/>
+                <constraint firstItem="hCT-ND-HaT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BZ8-qf-VHR"/>
+                <constraint firstItem="Ehc-dv-Tlo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G8J-PL-eR7"/>
+                <constraint firstAttribute="bottom" secondItem="Ehc-dv-Tlo" secondAttribute="bottom" id="LYg-cQ-IMY"/>
+                <constraint firstAttribute="trailing" secondItem="Ehc-dv-Tlo" secondAttribute="trailing" id="XP2-bO-9xX"/>
+                <constraint firstItem="Ehc-dv-Tlo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d0e-AJ-BCf"/>
+                <constraint firstAttribute="bottom" secondItem="hCT-ND-HaT" secondAttribute="bottom" constant="50" id="do8-Vb-Do8"/>
+                <constraint firstItem="hCT-ND-HaT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ySY-hU-rII"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="eay-bO-bVT" userLabel="View Tags">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Từ khoá nổi bật" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kig-aO-WAi">
+                    <rect key="frame" x="36" y="15" width="186" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a27-Zp-ova" userLabel="TagsList">
+                    <rect key="frame" x="0.0" y="51" width="600" height="84"/>
+                    <subviews>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-Ge-7WC">
+                            <rect key="frame" x="290" y="32" width="20" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SAe-Ge-7WC" firstAttribute="centerX" secondItem="a27-Zp-ova" secondAttribute="centerX" id="6km-eY-VeI"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-key" translatesAutoresizingMaskIntoConstraints="NO" id="z4I-vj-WpF">
+                    <rect key="frame" x="14" y="17" width="17" height="16"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="a27-Zp-ova" firstAttribute="top" secondItem="kig-aO-WAi" secondAttribute="bottom" constant="15" id="2gd-Pt-khf"/>
+                <constraint firstAttribute="trailing" secondItem="a27-Zp-ova" secondAttribute="trailing" id="LJ0-qa-3iQ"/>
+                <constraint firstAttribute="bottom" secondItem="a27-Zp-ova" secondAttribute="bottom" id="b6p-AS-auF"/>
+                <constraint firstItem="a27-Zp-ova" firstAttribute="leading" secondItem="eay-bO-bVT" secondAttribute="leading" id="xgh-5T-Vaz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="484" y="-428.5"/>
+        </view>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-0x-68S" userLabel=" View Genre">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="97"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fc5-5G-Xj7" userLabel="ShortFilm">
+                    <rect key="frame" x="0.0" y="15" width="200" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-Fo-vQR">
+                            <rect key="frame" x="100" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Phim ngắn" image="icon-short-film-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-short-film-iphone-h"/>
+                            <connections>
+                                <action selector="btnGenreAction:" destination="-1" eventType="touchUpInside" id="pRa-Qi-rNz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="OfK-Fo-vQR" firstAttribute="centerX" secondItem="Fc5-5G-Xj7" secondAttribute="centerX" id="DJ0-1x-vq1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJf-Ze-P0g" userLabel="TVShow">
+                    <rect key="frame" x="200" y="15" width="193" height="70"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33g-1d-h5C">
+                            <rect key="frame" x="35" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="TV Show" image="icon-tv-show-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-tv-show-iphone-h"/>
+                            <connections>
+                                <action selector="btnGenreAction:" destination="-1" eventType="touchUpInside" id="uHw-pH-1DO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="33g-1d-h5C" firstAttribute="centerX" secondItem="jJf-Ze-P0g" secondAttribute="centerX" id="YLj-eM-Fe9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpx-Gr-DvN" userLabel="Relax">
+                    <rect key="frame" x="400" y="15" width="100" height="70"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysC-Sl-0N3">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Giải trí" image="icon-multimedia-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-multimedia-iphone-h"/>
+                            <connections>
+                                <action selector="btnGenreAction:" destination="-1" eventType="touchUpInside" id="2LP-4o-gTj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ysC-Sl-0N3" firstAttribute="centerX" secondItem="kpx-Gr-DvN" secondAttribute="centerX" id="dvE-Bg-nxc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-Ye-ZJD" userLabel="Line">
+                    <rect key="frame" x="0.0" y="96" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kpx-Gr-DvN" firstAttribute="width" secondItem="V7w-0x-68S" secondAttribute="width" multiplier="1/3" id="4wB-3E-3V3"/>
+                <constraint firstItem="jJf-Ze-P0g" firstAttribute="width" secondItem="V7w-0x-68S" secondAttribute="width" multiplier="1/3" id="7rK-No-8x6"/>
+                <constraint firstAttribute="trailing" secondItem="YBi-Ye-ZJD" secondAttribute="trailing" id="HM8-xX-cGW"/>
+                <constraint firstItem="YBi-Ye-ZJD" firstAttribute="top" secondItem="V7w-0x-68S" secondAttribute="top" constant="90" id="IRv-TL-XzV" userLabel="Line.top = top + 90"/>
+                <constraint firstItem="Fc5-5G-Xj7" firstAttribute="width" secondItem="V7w-0x-68S" secondAttribute="width" multiplier="1/3" id="KHT-7J-Uu0"/>
+                <constraint firstAttribute="height" constant="90" id="M62-Hf-FLK"/>
+                <constraint firstItem="jJf-Ze-P0g" firstAttribute="leading" secondItem="Fc5-5G-Xj7" secondAttribute="trailing" id="RHP-iQ-oh8"/>
+                <constraint firstItem="kpx-Gr-DvN" firstAttribute="leading" secondItem="jJf-Ze-P0g" secondAttribute="trailing" id="d5d-fe-JVp"/>
+                <constraint firstItem="jJf-Ze-P0g" firstAttribute="centerX" secondItem="V7w-0x-68S" secondAttribute="centerX" id="e4s-g0-yoL"/>
+                <constraint firstItem="YBi-Ye-ZJD" firstAttribute="leading" secondItem="V7w-0x-68S" secondAttribute="leading" id="gnG-3d-8cM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="383" y="-131.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-key" width="17" height="16"/>
+        <image name="icon-matketnoi" width="70" height="55"/>
+        <image name="icon-multimedia-iphone" width="42" height="40"/>
+        <image name="icon-multimedia-iphone-h" width="42" height="40"/>
+        <image name="icon-short-film-iphone" width="42" height="40"/>
+        <image name="icon-short-film-iphone-h" width="42" height="40"/>
+        <image name="icon-tv-show-iphone" width="42" height="40"/>
+        <image name="icon-tv-show-iphone-h" width="42" height="40"/>
+    </resources>
+</document>

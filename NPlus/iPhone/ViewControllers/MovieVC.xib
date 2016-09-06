@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieVC">
+            <connections>
+                <outlet property="btnAll" destination="44c-v4-l7A" id="dgb-Db-FKB"/>
+                <outlet property="btnBack" destination="W44-4Z-nvt" id="N8l-sX-o9q"/>
+                <outlet property="btnHot" destination="SDz-fv-QU1" id="HGB-wA-SmA"/>
+                <outlet property="btnSearch" destination="h3r-8s-P1O" id="QcY-ao-A3w"/>
+                <outlet property="containerView" destination="7pL-U9-lQQ" id="9jI-kc-9bH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTab" destination="Jy7-UZ-QeX" id="eMZ-WP-B3h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pL-U9-lQQ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7pL-U9-lQQ" secondAttribute="bottom" id="B0S-N6-lPG"/>
+                <constraint firstItem="7pL-U9-lQQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P0g-z1-4BL"/>
+                <constraint firstAttribute="trailing" secondItem="7pL-U9-lQQ" secondAttribute="trailing" id="SKZ-ed-Zkt"/>
+                <constraint firstItem="7pL-U9-lQQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SbR-Jn-XS2"/>
+            </constraints>
+            <point key="canvasLocation" x="519" y="-74"/>
+        </view>
+        <view contentMode="scaleToFill" id="Jy7-UZ-QeX">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-fv-QU1">
+                    <rect key="frame" x="1" y="9" width="60" height="25"/>
+                    <state key="normal" image="theloai_noibat.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="theloai_noibat_hover.png"/>
+                    <state key="highlighted" image="theloai_noibat_hover.png"/>
+                    <connections>
+                        <action selector="changeTab:" destination="-1" eventType="touchUpInside" id="h0n-zE-FJa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44c-v4-l7A">
+                    <rect key="frame" x="60" y="9" width="60" height="25"/>
+                    <state key="normal" image="theloai_tatca.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="theloai_tatca_hover.png"/>
+                    <state key="highlighted" image="theloai_tatca_hover.png"/>
+                    <connections>
+                        <action selector="changeTab:" destination="-1" eventType="touchUpInside" id="i34-b7-5vn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="44c-v4-l7A" secondAttribute="bottom" constant="10" id="2tG-wK-c6M"/>
+                <constraint firstItem="44c-v4-l7A" firstAttribute="top" secondItem="Jy7-UZ-QeX" secondAttribute="top" constant="9" id="MHk-gG-QeY"/>
+                <constraint firstItem="44c-v4-l7A" firstAttribute="leading" secondItem="SDz-fv-QU1" secondAttribute="trailing" constant="-1" id="OrA-9v-0BO"/>
+                <constraint firstAttribute="bottom" secondItem="SDz-fv-QU1" secondAttribute="bottom" constant="10" id="QUw-eT-BIB"/>
+                <constraint firstAttribute="trailing" secondItem="44c-v4-l7A" secondAttribute="trailing" id="l06-Kq-KpG"/>
+                <constraint firstItem="SDz-fv-QU1" firstAttribute="top" secondItem="Jy7-UZ-QeX" secondAttribute="top" constant="9" id="lQ1-1j-S7F"/>
+                <constraint firstItem="SDz-fv-QU1" firstAttribute="leading" secondItem="Jy7-UZ-QeX" secondAttribute="leading" constant="1" id="ogr-y5-nvz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="819" y="299"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h3r-8s-P1O">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="icon_search.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" image="icon_search_hover.png"/>
+            <connections>
+                <action selector="btnSearch_Tapped:" destination="-1" eventType="touchUpInside" id="8sW-Fv-wgb"/>
+            </connections>
+            <point key="canvasLocation" x="675.5" y="298.5"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W44-4Z-nvt">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <state key="normal" title="Phim" image="icon_back.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" image="icon_back_hover.png"/>
+            <connections>
+                <action selector="btnBack_Tapped:" destination="-1" eventType="touchUpInside" id="yoC-Yy-YJ8"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="-139"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="icon_back.png" width="8" height="15"/>
+        <image name="icon_back_hover.png" width="8" height="15"/>
+        <image name="icon_search.png" width="25" height="25"/>
+        <image name="icon_search_hover.png" width="25" height="25"/>
+        <image name="theloai_noibat.png" width="60" height="25"/>
+        <image name="theloai_noibat_hover.png" width="60" height="25"/>
+        <image name="theloai_tatca.png" width="60" height="25"/>
+        <image name="theloai_tatca_hover.png" width="60" height="25"/>
+    </resources>
+</document>

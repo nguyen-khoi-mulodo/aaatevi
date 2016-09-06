@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cuaTuiCellId" id="3et-aj-2tn" customClass="CuaTuiCell">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="evt-aP-kJc">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="85"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_onlinemusic_audition_number_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="teS-Bc-aCQ">
+                        <rect key="frame" x="76" y="67" width="70" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Sf6-Yf-lS5"/>
+                            <constraint firstAttribute="width" constant="70" id="aBl-Hf-tRm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-Hg-1RC">
+                        <rect key="frame" x="106" y="67" width="40" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="rnu-As-aOu"/>
+                            <constraint firstAttribute="width" constant="40" id="s9y-Lm-KNr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_download_wait_press.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y08-qT-erD">
+                        <rect key="frame" x="90" y="69" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="U8r-fR-S6Q"/>
+                            <constraint firstAttribute="height" constant="13" id="zLo-dS-wDX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tân Thiên Long Bát Bộ 2014" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-B1-MiK">
+                        <rect key="frame" x="0.0" y="85" width="146" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="146" id="grn-a9-rT4"/>
+                            <constraint firstAttribute="height" constant="40" id="qSk-CA-dq4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1BM-B1-MiK" secondAttribute="bottom" id="5tw-kB-YRF"/>
+                <constraint firstAttribute="bottom" secondItem="Y08-qT-erD" secondAttribute="bottom" constant="43" id="EYe-vT-9Zb"/>
+                <constraint firstAttribute="bottom" secondItem="evt-aP-kJc" secondAttribute="bottom" constant="40" id="Jmq-MF-Amz"/>
+                <constraint firstAttribute="trailing" secondItem="evt-aP-kJc" secondAttribute="trailing" id="NpW-tC-oFa"/>
+                <constraint firstAttribute="trailing" secondItem="evt-aP-kJc" secondAttribute="trailing" id="O09-Wl-Fna"/>
+                <constraint firstItem="6oh-Hg-1RC" firstAttribute="leading" secondItem="Y08-qT-erD" secondAttribute="trailing" constant="3" id="SJp-TR-db8"/>
+                <constraint firstAttribute="trailing" secondItem="1BM-B1-MiK" secondAttribute="trailing" id="bfz-QO-9C3"/>
+                <constraint firstItem="evt-aP-kJc" firstAttribute="top" secondItem="3et-aj-2tn" secondAttribute="top" id="dgd-bB-2fh"/>
+                <constraint firstAttribute="trailing" secondItem="evt-aP-kJc" secondAttribute="trailing" id="eSO-vq-zu6"/>
+                <constraint firstAttribute="bottom" secondItem="teS-Bc-aCQ" secondAttribute="bottom" constant="40" id="ixD-XQ-fMo"/>
+                <constraint firstItem="evt-aP-kJc" firstAttribute="leading" secondItem="3et-aj-2tn" secondAttribute="leading" id="nR7-a4-COw"/>
+                <constraint firstAttribute="trailing" secondItem="6oh-Hg-1RC" secondAttribute="trailing" id="nei-lD-xhY"/>
+                <constraint firstAttribute="bottom" secondItem="6oh-Hg-1RC" secondAttribute="bottom" constant="40" id="vyO-27-ThP"/>
+                <constraint firstAttribute="trailing" secondItem="teS-Bc-aCQ" secondAttribute="trailing" id="w4Z-cR-N3B"/>
+                <constraint firstItem="1BM-B1-MiK" firstAttribute="leading" secondItem="3et-aj-2tn" secondAttribute="leading" id="ylU-yp-pdj"/>
+            </constraints>
+            <size key="customSize" width="204" height="189"/>
+            <connections>
+                <outlet property="imgItem" destination="evt-aP-kJc" id="BbV-AB-FuZ"/>
+                <outlet property="lbTime" destination="6oh-Hg-1RC" id="PzM-Zd-Mak"/>
+                <outlet property="lbTitle" destination="1BM-B1-MiK" id="hOl-Us-7LS"/>
+            </connections>
+            <point key="canvasLocation" x="420" y="275.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_onlinemusic_audition_number_bg.png" width="51" height="18"/>
+        <image name="ic_download_wait_press.png" width="16" height="16"/>
+    </resources>
+</document>

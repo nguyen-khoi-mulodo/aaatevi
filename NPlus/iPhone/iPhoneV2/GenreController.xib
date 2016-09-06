@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+        <mutableArray key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenreController">
+            <connections>
+                <outlet property="btnFilter" destination="fVk-Lt-mch" id="xxl-9f-ilp"/>
+                <outlet property="btnRelax" destination="TdN-Kd-Ma8" id="cwZ-dQ-yW3"/>
+                <outlet property="btnSelectAll" destination="HjY-Zf-g3L" id="2DC-Lu-rUt"/>
+                <outlet property="btnShortFilm" destination="UUR-iS-AWR" id="yZb-ia-0H9"/>
+                <outlet property="btnTVShow" destination="Uw4-Of-0LV" id="aep-vz-owN"/>
+                <outlet property="btnTitleGenre" destination="WR0-BS-Cwo" id="Axg-ss-M5I"/>
+                <outlet property="buttonBarView" destination="Mud-qW-3Ze" id="T0Y-Dv-VCK"/>
+                <outlet property="containerView" destination="GLK-Zv-PZP" id="fmJ-so-fM4"/>
+                <outlet property="headerKeyword" destination="57j-S3-Joc" id="82V-hG-gX8"/>
+                <outlet property="headerView" destination="1VY-yx-pmy" id="416-xv-enZ"/>
+                <outlet property="lineSelected" destination="Tmx-Vo-lv2" id="ryA-cR-kJJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAll" destination="4MU-h4-vwp" id="ZH8-y6-WUs"/>
+                <outlet property="viewParentGenre" destination="yFU-To-CDz" id="srV-d6-tbB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VY-yx-pmy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mud-qW-3Ze" customClass="XLButtonBarView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yJP-uC-ccg">
+                                <size key="itemSize" width="79" height="45"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="x8A-Cj-FsC"/>
+                                <outlet property="delegate" destination="-1" id="ESh-Ra-WoV"/>
+                            </connections>
+                        </collectionView>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MU-h4-vwp">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tmx-Vo-lv2">
+                                    <rect key="frame" x="0.0" y="43" width="80" height="3"/>
+                                    <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjY-Zf-g3L">
+                                    <rect key="frame" x="0.0" y="8" width="80" height="30"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Toàn bộ">
+                                        <color key="titleColor" red="0.0" green="0.67843137249999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSelectAllTapped:" destination="-1" eventType="touchUpInside" id="X0k-58-ZSv"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="bWz-vE-BRA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Mud-qW-3Ze" firstAttribute="leading" secondItem="1VY-yx-pmy" secondAttribute="leading" constant="80" id="OHF-XI-Gsk"/>
+                        <constraint firstAttribute="trailing" secondItem="Mud-qW-3Ze" secondAttribute="trailing" id="fIG-g9-Cge"/>
+                        <constraint firstItem="4MU-h4-vwp" firstAttribute="leading" secondItem="1VY-yx-pmy" secondAttribute="leading" id="tu7-zr-ITk"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLK-Zv-PZP">
+                    <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GLK-Zv-PZP" secondAttribute="bottom" id="29k-Wv-PsP"/>
+                <constraint firstItem="GLK-Zv-PZP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3BX-WZ-KPW"/>
+                <constraint firstAttribute="trailing" secondItem="GLK-Zv-PZP" secondAttribute="trailing" id="6F0-SY-wRS"/>
+                <constraint firstItem="1VY-yx-pmy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7KN-4N-C8F"/>
+                <constraint firstAttribute="trailing" secondItem="1VY-yx-pmy" secondAttribute="trailing" id="8Dd-yh-Krq"/>
+                <constraint firstItem="1VY-yx-pmy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O0x-Za-83U"/>
+                <constraint firstItem="GLK-Zv-PZP" firstAttribute="top" secondItem="1VY-yx-pmy" secondAttribute="bottom" id="Zng-4l-awA"/>
+            </constraints>
+            <point key="canvasLocation" x="169" y="310"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="WR0-BS-Cwo">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="31"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="16"/>
+            <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <inset key="imageEdgeInsets" minX="107" minY="2" maxX="0.0" maxY="0.0"/>
+            <state key="normal" title="Phim ngắn" image="icon-view-more-v2">
+                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+            <connections>
+                <action selector="btnTitleGenreTapped:" destination="-1" eventType="touchUpInside" id="SYO-ir-X0n"/>
+            </connections>
+            <point key="canvasLocation" x="647.5" y="391.5"/>
+        </button>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-To-CDz" userLabel=" View Genre">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="97"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgA-A9-dM1" userLabel="ShortFilm">
+                    <rect key="frame" x="0.0" y="15" width="200" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUR-iS-AWR">
+                            <rect key="frame" x="100" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Phim ngắn" image="icon-short-film-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-short-film-iphone-h"/>
+                            <connections>
+                                <action selector="buttonParentGenreTapped:" destination="-1" eventType="touchUpInside" id="kP5-fz-864"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UUR-iS-AWR" firstAttribute="centerX" secondItem="zgA-A9-dM1" secondAttribute="centerX" id="uHQ-Hd-Qnd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-nz-aHD" userLabel="TVShow">
+                    <rect key="frame" x="200" y="15" width="193" height="70"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uw4-Of-0LV">
+                            <rect key="frame" x="35" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="TV Show" image="icon-tv-show-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-tv-show-iphone-h"/>
+                            <connections>
+                                <action selector="buttonParentGenreTapped:" destination="-1" eventType="touchUpInside" id="Vyl-vx-6cX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Uw4-Of-0LV" firstAttribute="centerX" secondItem="fDh-nz-aHD" secondAttribute="centerX" id="tKW-wc-Hq6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-72-6jU" userLabel="Relax">
+                    <rect key="frame" x="400" y="15" width="100" height="70"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdN-Kd-Ma8">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-43" minY="0.0" maxX="0.0" maxY="-38"/>
+                            <inset key="imageEdgeInsets" minX="27" minY="-30" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Giải trí" image="icon-multimedia-iphone">
+                                <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" image="icon-multimedia-iphone-h"/>
+                            <connections>
+                                <action selector="buttonParentGenreTapped:" destination="-1" eventType="touchUpInside" id="P1g-cH-48w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TdN-Kd-Ma8" firstAttribute="centerX" secondItem="Zdi-72-6jU" secondAttribute="centerX" id="KUy-Hw-DRh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-r7-xsR" userLabel="Line">
+                    <rect key="frame" x="0.0" y="96" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YgV-r7-xsR" firstAttribute="top" secondItem="yFU-To-CDz" secondAttribute="top" constant="90" id="2Ts-w7-GFr" userLabel="Line.top = top + 90"/>
+                <constraint firstItem="fDh-nz-aHD" firstAttribute="centerX" secondItem="yFU-To-CDz" secondAttribute="centerX" id="7BT-0k-0rP"/>
+                <constraint firstAttribute="trailing" secondItem="YgV-r7-xsR" secondAttribute="trailing" id="EjH-B1-CtT"/>
+                <constraint firstAttribute="height" constant="90" id="INx-nU-oe1"/>
+                <constraint firstItem="zgA-A9-dM1" firstAttribute="width" secondItem="yFU-To-CDz" secondAttribute="width" multiplier="1/3" id="W6C-B8-umn"/>
+                <constraint firstItem="Zdi-72-6jU" firstAttribute="leading" secondItem="fDh-nz-aHD" secondAttribute="trailing" id="gwg-Mf-Jew"/>
+                <constraint firstItem="fDh-nz-aHD" firstAttribute="width" secondItem="yFU-To-CDz" secondAttribute="width" multiplier="1/3" id="nN4-vE-IUS"/>
+                <constraint firstItem="Zdi-72-6jU" firstAttribute="width" secondItem="yFU-To-CDz" secondAttribute="width" multiplier="1/3" id="qgd-dE-8Fx"/>
+                <constraint firstItem="fDh-nz-aHD" firstAttribute="leading" secondItem="zgA-A9-dM1" secondAttribute="trailing" id="vPo-dD-38S"/>
+                <constraint firstItem="YgV-r7-xsR" firstAttribute="leading" secondItem="yFU-To-CDz" secondAttribute="leading" id="z9i-9c-ePv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="369" y="-14.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fVk-Lt-mch">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+            <inset key="titleEdgeInsets" minX="-49" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <state key="normal" title="Mới" image="icon-filter-h-v2">
+                <color key="titleColor" red="0.0" green="0.67843137249999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+            <connections>
+                <action selector="btnFilterTapped:" destination="-1" eventType="touchUpInside" id="ifQ-EV-fMT"/>
+            </connections>
+            <point key="canvasLocation" x="571" y="195"/>
+        </button>
+        <view contentMode="scaleToFill" id="57j-S3-Joc">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07m-26-Ozm">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="10"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="vqF-G8-cK4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="icon-top-keyword-v2" translatesAutoresizingMaskIntoConstraints="NO" id="fYv-KJ-8kJ">
+                    <rect key="frame" x="8" y="25" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="9zl-Vb-yVV"/>
+                        <constraint firstAttribute="height" constant="20" id="ziJ-sP-4Ag"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Từ khóa hot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-Yp-0tk">
+                    <rect key="frame" x="36" y="25" width="330" height="21"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="19"/>
+                    <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="07m-26-Ozm" firstAttribute="leading" secondItem="57j-S3-Joc" secondAttribute="leading" id="0Y9-W7-0cv"/>
+                <constraint firstItem="07m-26-Ozm" firstAttribute="top" secondItem="57j-S3-Joc" secondAttribute="top" id="Q4R-sK-pcx"/>
+                <constraint firstItem="Hr6-Yp-0tk" firstAttribute="leading" secondItem="fYv-KJ-8kJ" secondAttribute="trailing" constant="8" id="b5c-sL-Io9"/>
+                <constraint firstItem="fYv-KJ-8kJ" firstAttribute="leading" secondItem="57j-S3-Joc" secondAttribute="leading" constant="8" id="cZj-WC-JeH"/>
+                <constraint firstAttribute="trailing" secondItem="07m-26-Ozm" secondAttribute="trailing" id="fIU-4T-OU4"/>
+                <constraint firstAttribute="trailing" secondItem="Hr6-Yp-0tk" secondAttribute="trailing" constant="8" id="gc9-ke-Hgu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="51" y="-125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-filter-h-v2" width="24" height="24"/>
+        <image name="icon-multimedia-iphone" width="42" height="40"/>
+        <image name="icon-multimedia-iphone-h" width="42" height="40"/>
+        <image name="icon-short-film-iphone" width="42" height="40"/>
+        <image name="icon-short-film-iphone-h" width="42" height="40"/>
+        <image name="icon-top-keyword-v2" width="20" height="20"/>
+        <image name="icon-tv-show-iphone" width="42" height="40"/>
+        <image name="icon-tv-show-iphone-h" width="42" height="40"/>
+        <image name="icon-view-more-v2" width="20" height="20"/>
+    </resources>
+</document>

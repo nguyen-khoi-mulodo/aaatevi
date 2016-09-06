@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 4.3">
+    <entity name="CDHistory" representedClassName="CDHistory" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoSubTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDVideo" representedClassName="CDVideo" syncable="YES">
+        <attribute name="downloadCent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isHadSubTitle" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLiked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkDown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkShare" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streamUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTitleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoSubTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDHistory" positionX="-288" positionY="18" width="128" height="165"/>
+        <element name="CDVideo" positionX="-612" positionY="-54" width="128" height="360"/>
+    </elements>
+</model>

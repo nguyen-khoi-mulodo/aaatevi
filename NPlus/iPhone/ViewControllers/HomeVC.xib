@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC">
+            <connections>
+                <outlet property="imgBG" destination="jQU-FO-eW1" id="cEd-We-mhU"/>
+                <outlet property="imgViewNodata" destination="PfM-fo-wvl" id="9Rd-Ye-LPg"/>
+                <outlet property="lbNodata" destination="X0I-F9-7Eo" id="NpB-or-qy4"/>
+                <outlet property="noDataView" destination="J0M-ka-UDw" id="POy-Oc-Zjm"/>
+                <outlet property="tbMain" destination="OZb-cd-4dm" id="f4X-B4-7HC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNoConnection" destination="arg-V3-Yvs" id="RQo-PH-q5G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQU-FO-eW1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="611"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="OZb-cd-4dm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.0" green="0.67843137254901964" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GBw-hg-9lJ"/>
+                        <outlet property="delegate" destination="-1" id="i4I-67-SB8"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J0M-ka-UDw">
+                    <rect key="frame" x="180" y="242" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PfM-fo-wvl">
+                            <rect key="frame" x="93" y="16" width="55" height="55"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Danh sách lịch sử chưa có." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0I-F9-7Eo">
+                            <rect key="frame" x="8" y="91" width="224" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arg-V3-Yvs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qMd-p7-21Y">
+                            <rect key="frame" x="180" y="261" width="240" height="104"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-matketnoi" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-VG-MNz">
+                                    <rect key="frame" x="85" y="8" width="70" height="55"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mất kết nối, vui lòng thử lại sau!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOt-uc-pBm">
+                                    <rect key="frame" x="0.0" y="70" width="240" height="21"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                                    <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qMd-p7-21Y" firstAttribute="centerY" secondItem="arg-V3-Yvs" secondAttribute="centerY" id="q3X-KH-aSH"/>
+                        <constraint firstItem="qMd-p7-21Y" firstAttribute="centerX" secondItem="arg-V3-Yvs" secondAttribute="centerX" id="vcN-PH-jnT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="jQU-FO-eW1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5aF-lY-ETb"/>
+                <constraint firstItem="OZb-cd-4dm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DIb-ja-VQ7"/>
+                <constraint firstAttribute="trailing" secondItem="arg-V3-Yvs" secondAttribute="trailing" id="EUu-7h-ERB"/>
+                <constraint firstItem="arg-V3-Yvs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fir-YM-uRO"/>
+                <constraint firstAttribute="bottom" secondItem="jQU-FO-eW1" secondAttribute="bottom" id="Jt9-AY-dQ9"/>
+                <constraint firstAttribute="bottom" secondItem="arg-V3-Yvs" secondAttribute="bottom" id="JzG-xz-ZPu"/>
+                <constraint firstItem="J0M-ka-UDw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ry4-xv-z0u"/>
+                <constraint firstAttribute="trailing" secondItem="OZb-cd-4dm" secondAttribute="trailing" id="dxQ-Hj-APD"/>
+                <constraint firstItem="arg-V3-Yvs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e4p-5Z-bby"/>
+                <constraint firstItem="J0M-ka-UDw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="eXS-L2-VGd"/>
+                <constraint firstAttribute="bottom" secondItem="OZb-cd-4dm" secondAttribute="bottom" id="jkJ-CX-SF3"/>
+                <constraint firstAttribute="trailing" secondItem="jQU-FO-eW1" secondAttribute="trailing" id="kIl-ge-cdt"/>
+                <constraint firstItem="jQU-FO-eW1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w2B-u8-7tW"/>
+                <constraint firstItem="OZb-cd-4dm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wY6-3d-dIj"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="159" y="160"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-matketnoi" width="70" height="55"/>
+    </resources>
+</document>

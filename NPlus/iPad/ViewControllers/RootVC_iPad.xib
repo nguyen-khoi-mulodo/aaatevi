@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootVC_iPad">
+            <connections>
+                <outlet property="btnCuatui" destination="qNy-en-nCn" id="i8n-MB-2ir"/>
+                <outlet property="btnGiaiTri" destination="JQO-2k-QbX" id="oaF-mI-Zg7"/>
+                <outlet property="btnHome" destination="Z7L-jy-F96" id="MPi-qO-BAd"/>
+                <outlet property="btnKhamPha" destination="ZPS-cy-xQa" id="f7h-1G-KTo"/>
+                <outlet property="btnOffline" destination="nmT-vz-kmh" id="ntC-4V-vC9"/>
+                <outlet property="btnPhim" destination="yMF-Kb-3dz" id="d34-MY-tqf"/>
+                <outlet property="btnSetting" destination="9IY-EU-n3b" id="Vae-ze-pga"/>
+                <outlet property="btnTVShow" destination="IKD-iS-iix" id="l9U-Ef-7EQ"/>
+                <outlet property="maskVideoView" destination="lGW-lB-7oj" id="7p0-cw-aQw"/>
+                <outlet property="maskView" destination="QkU-XQ-y4f" id="zyc-Yy-LSc"/>
+                <outlet property="menuView" destination="4QZ-mL-YuX" id="lWQ-rm-Jkq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkU-XQ-y4f" userLabel="MaskView">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="708"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGW-lB-7oj" userLabel="VideoMaskView">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-EU-n3b">
+                    <rect key="frame" x="956" y="38" width="60" height="60"/>
+                    <inset key="contentEdgeInsets" minX="6" minY="18" maxX="6" maxY="10"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-mL-YuX" userLabel="MenuView" customClass="ILTranslucentView">
+                    <rect key="frame" x="0.0" y="707" width="1024" height="61"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-gP-uYX" userLabel="Line">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="1"/>
+                            <color key="backgroundColor" red="0.94112730026245117" green="0.94121068716049194" blue="0.94105750322341919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKD-iS-iix" userLabel="Btn TV Show">
+                            <rect key="frame" x="420" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="12" maxX="30" maxY="18"/>
+                            <state key="normal" title="TV Show" image="main-ic-tvshow-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-tvshow-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-tvshow-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="Gbz-p7-E78"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-cy-xQa" userLabel="Btn Kham Pha">
+                            <rect key="frame" x="332" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="9" maxX="30" maxY="21"/>
+                            <state key="normal" title="Khám Phá" image="main-ic-explore-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-explore-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-explore-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="FU7-zV-fV3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmT-vz-kmh">
+                            <rect key="frame" x="693" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="10" maxX="30" maxY="20"/>
+                            <state key="normal" title="Tải về" image="main-ic-download-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-download-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-download-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="SwI-S0-eSY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2up-lc-bV0" userLabel="Space">
+                            <rect key="frame" x="601" y="12" width="1" height="35"/>
+                            <color key="backgroundColor" red="0.4195806086063385" green="0.42744588851928711" blue="0.43914031982421875" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNy-en-nCn">
+                            <rect key="frame" x="603" y="1" width="91" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="9" maxX="30" maxY="21"/>
+                            <state key="normal" title="Cá nhân" image="main-ic-personal-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-personal-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-personal-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="XEN-oP-mzL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-jy-F96">
+                            <rect key="frame" x="242" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="9" maxX="30" maxY="21"/>
+                            <state key="normal" title="Trang chủ" image="main-ic-home-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-home-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-home-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="w8v-CH-0X8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMF-Kb-3dz" userLabel="Btn Phim Ngan">
+                            <rect key="frame" x="332" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-32" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="12" maxX="30" maxY="18"/>
+                            <state key="normal" title="Phim ngắn" image="main-ic-short-film-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-short-film-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-short-film-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="dGg-ZJ-bkm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-2k-QbX" userLabel="Btn Giai Tri">
+                            <rect key="frame" x="510" y="1" width="90" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-34" minY="36" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="10" maxX="30" maxY="20"/>
+                            <state key="normal" title="Giải trí" image="main-ic-funny-ipad-v2">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="main-ic-funny-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <state key="highlighted" image="main-ic-funny-active-ipad-v2">
+                                <color key="titleColor" red="0.20392158630000001" green="0.69803923369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuSelected:" destination="-1" eventType="touchUpInside" id="c6x-cZ-vV2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main-ic-download-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-download-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-explore-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-explore-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-funny-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-funny-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-home-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-home-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-personal-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-personal-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-short-film-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-short-film-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-tvshow-active-ipad-v2" width="28" height="28"/>
+        <image name="main-ic-tvshow-ipad-v2" width="28" height="28"/>
+    </resources>
+</document>

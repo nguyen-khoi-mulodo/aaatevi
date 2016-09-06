@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC">
+            <connections>
+                <outlet property="imvWel" destination="0Cc-hA-m5U" id="yVk-Ew-ebi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-hA-m5U">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Cc-hA-m5U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Xv-0h-OId"/>
+                <constraint firstItem="0Cc-hA-m5U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cwa-B0-0QO"/>
+                <constraint firstItem="0Cc-hA-m5U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HGq-l2-5vU"/>
+                <constraint firstAttribute="bottom" secondItem="0Cc-hA-m5U" secondAttribute="bottom" constant="-37" id="M8d-Qd-iMN"/>
+                <constraint firstItem="0Cc-hA-m5U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rob-s5-cwy"/>
+                <constraint firstAttribute="trailing" secondItem="0Cc-hA-m5U" secondAttribute="trailing" id="dQN-CP-en0"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="318.5" y="345.5"/>
+        </view>
+    </objects>
+</document>

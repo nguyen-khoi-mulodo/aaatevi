@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchTypeVC">
+            <connections>
+                <outlet property="cvMain" destination="CbQ-Xc-JK1" id="21W-M0-ZTM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CbQ-Xc-JK1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="6" id="d0A-Hn-kKo">
+                        <size key="itemSize" width="95" height="190"/>
+                        <size key="headerReferenceSize" width="320" height="11"/>
+                        <size key="footerReferenceSize" width="320" height="11"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CbQ-Xc-JK1" secondAttribute="bottom" id="ENz-xh-gkp"/>
+                <constraint firstItem="CbQ-Xc-JK1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M1g-ud-wIl"/>
+                <constraint firstItem="CbQ-Xc-JK1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yhO-G0-F9K"/>
+                <constraint firstAttribute="trailing" secondItem="CbQ-Xc-JK1" secondAttribute="trailing" id="zXZ-yq-Jxg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="162" y="283"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryVC">
+            <connections>
+                <outlet property="btnHistory" destination="Lbk-Xv-zkb" id="4ZF-ep-n64"/>
+                <outlet property="btnSearch" destination="k0r-VW-1CI" id="BAS-IY-F8T"/>
+                <outlet property="lbTitle" destination="4fh-Vr-Y3i" id="1Gv-y4-ivb"/>
+                <outlet property="tbMain" destination="ib9-sx-svO" id="dKN-8M-bQY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeader" destination="0lt-3T-0Ae" id="MwM-Gk-AEy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-sx-svO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lt-3T-0Ae">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ib9-sx-svO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0P2-nD-H9x"/>
+                <constraint firstItem="ib9-sx-svO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DrZ-gK-ELn"/>
+                <constraint firstAttribute="bottom" secondItem="ib9-sx-svO" secondAttribute="bottom" id="O07-xV-FpH"/>
+                <constraint firstAttribute="trailing" secondItem="ib9-sx-svO" secondAttribute="trailing" id="rz7-qy-OFj"/>
+            </constraints>
+            <point key="canvasLocation" x="420" y="283"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lbk-Xv-zkb">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="icon_lichsu.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" image="icon_lichsu_hover.png"/>
+            <connections>
+                <action selector="btnHistory_Tapped:" destination="-1" eventType="touchUpInside" id="bh9-LX-o3I"/>
+            </connections>
+            <point key="canvasLocation" x="796.5" y="-39.5"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k0r-VW-1CI">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" image="icon_search.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" image="icon_search_hover.png"/>
+            <connections>
+                <action selector="btnSearch_Tapped:" destination="-1" eventType="touchUpInside" id="84r-U2-CCJ"/>
+            </connections>
+            <point key="canvasLocation" x="795.5" y="46.5"/>
+        </button>
+        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thể loai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4fh-Vr-Y3i">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="819" y="141.5"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="icon_lichsu.png" width="25" height="25"/>
+        <image name="icon_lichsu_hover.png" width="25" height="25"/>
+        <image name="icon_search.png" width="25" height="25"/>
+        <image name="icon_search_hover.png" width="25" height="25"/>
+    </resources>
+</document>
